@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Modern</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 1rem;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        
+        p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .image-container {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .image-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+        
+        .caption {
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .caption h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        .caption p {
+            color: #666;
+            font-size: 1rem;
+        }
+        
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            color: #888;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive styles */
+        @media screen and (min-width: 768px) {
+            .gallery {
+                flex-direction: row;
+                gap: 2rem;
+            }
+            
+            .image-container {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gallery Modern</h1>
+            <p>Tampilan dua gambar dengan desain responsif</p>
+        </header>
+        
+        <div class="gallery">
+            <div class="image-container">
+                <img src="1.jpeg" alt="Gambar 1">
+                <div class="caption">
+                    <h2>Gambar Pertama</h2>
+                </div>
+            </div>
+            
+            <div class="image-container">
+                <img src="2.jpeg" alt="Gambar 2">
+                <div class="caption">
+                    <h2>Gambar Kedua</h2>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Gallery Modern. Dibuat dengan HTML & CSS.</p>
+        </footer>
+    </div>
+</body>
+</html>
